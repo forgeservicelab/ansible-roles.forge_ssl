@@ -1,0 +1,13 @@
+- copy:
+    src: forgeservicelab.fi.key
+    dest: "{{ forge_ssl_key }}"
+    owner: root
+    group: root
+    mode: 0600
+
+- copy:
+    src: forgeservicelab.fi.crt
+    dest: "{{ forge_ssl_cert }}"
+    owner: root
+    group: root
+    mode: 0644
