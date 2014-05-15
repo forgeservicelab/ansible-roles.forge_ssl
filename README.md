@@ -1,8 +1,8 @@
 # FORGE SSL
 
-A Simple role uploadign our certificate and key.
+A Simple role uploading our certificate and key.
 
-On must put the private key to ./files/forgeservicelab.fi.key before using it.
+One must put the private key to ./files/forgeservicelab.fi.key before using it.
 
 The certificate is already there.
 
