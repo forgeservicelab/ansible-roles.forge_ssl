@@ -6,22 +6,12 @@
     mode: 0600
 
 - copy:
-    src: forgeservicelab.fi.crt
-    dest: "{{ forge_ssl_cert }}"
+    src: "{{ item.0 }}"
+    dest: "{{ item.1 }}"
     owner: root
     group: root
     mode: 0644
+  with_together:
+    - [forgeservicelab.fi.crt, forgeservicelab.fi.crt.chain, forgeservicelab.fi.crt.wholechain]
+    - ["{{ forge_ssl_cert }}", "{{ forge_ssl_cert_chain }}", "{{ forge_ssl_cert_wholechain }}"]
 
-- copy:
-    src: forgeservicelab.fi.crt.chain
-    dest: "{{ forge_ssl_cert_chain }}"
-    owner: root
-    group: root
-    mode: 0644
-
-- copy:
-    src: forgeservicelab.fi.crt.wholechain
-    dest: "{{ forge_ssl_cert_wholechain }}"
-    owner: root
-    group: root
-    mode: 0644
