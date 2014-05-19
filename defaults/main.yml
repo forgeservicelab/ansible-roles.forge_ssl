@@ -1,2 +1,4 @@
 forge_ssl_key: /etc/ssl/forgeservicelab.fi.key
 forge_ssl_cert: /etc/ssl/forgeservicelab.fi.crt
+forge_ssl_cert_chain: /etc/ssl/forgeservicelab.fi.crt.chain
+forge_ssl_cert_wholechain: /etc/ssl/forgeservicelab.fi.crt.wholechain
