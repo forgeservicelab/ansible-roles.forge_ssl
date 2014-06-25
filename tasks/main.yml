@@ -4,6 +4,7 @@
     owner: root
     group: root
     mode: 0600
+  sudo: true
 
 - copy:
     src: "{{ item.0 }}"
