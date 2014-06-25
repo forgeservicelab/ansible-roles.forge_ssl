@@ -15,4 +15,4 @@
   with_together:
     - [forgeservicelab.fi.crt, forgeservicelab.fi.crt.chain, forgeservicelab.fi.crt.wholechain]
     - ["{{ forge_ssl_cert }}", "{{ forge_ssl_cert_chain }}", "{{ forge_ssl_cert_wholechain }}"]
-
+  sudo: true
