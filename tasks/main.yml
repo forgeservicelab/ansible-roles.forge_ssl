@@ -1,9 +1,12 @@
+- group:
+    name: ssl-cert
+
 - copy:
     src: forgeservicelab.fi.key
     dest: "{{ forge_ssl_key }}"
     owner: root
-    group: root
-    mode: 0600
+    group: ssl-cert
+    mode: 0640
   sudo: true
 
 - copy:
