@@ -16,6 +16,14 @@
     group: root
     mode: 0644
   with_together:
-    - [forgeservicelab.fi.crt, forgeservicelab.fi.crt.chain, forgeservicelab.fi.crt.wholechain, dhparam.pem]
-    - ["{{ forge_ssl_cert }}", "{{ forge_ssl_cert_chain }}", "{{ forge_ssl_cert_wholechain }}", "{{ dhparams_path }}"]
+    - [forgeservicelab.fi.crt, forgeservicelab.fi.crt.chain, forgeservicelab.fi.crt.wholechain]
+    - ["{{ forge_ssl_cert }}", "{{ forge_ssl_cert_chain }}", "{{ forge_ssl_cert_wholechain }}"]
+  sudo: true
+
+- copy:
+    content: "{{ dhparam }}"
+    dest: "{{ dhparams_path }}"
+    owner: root
+    group: root
+    mode: 0644
   sudo: true
