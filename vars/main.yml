@@ -1,0 +1,5 @@
+---
+dhparam: |
+  -----BEGIN DH PARAMETERS-----
+  <PUT YOUR DH PARAMETERS HERE>
+  -----END DH PARAMETERS-----
