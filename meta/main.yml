@@ -2,6 +2,6 @@
 galaxy_info:
   author: Tomas Karasek
   description: Set up FORGE SSL cert and private key
-  license: GPLv2
+  license: MIT
   min_ansible_version: 1.5
 dependencies: []
